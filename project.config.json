@@ -9,7 +9,7 @@
 	},
 	"miniprogramRoot": "./dist/",
 	"compileType": "miniprogram",
-	"appid": "touristappid",
+	"appid": "wx3d5691fa57f3083b",
 	"projectname": "vue-blog",
 	"condition": {
 		"search": {
