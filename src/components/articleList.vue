@@ -1,6 +1,6 @@
 <template>
   <div class="article_container">
-    <div class="article_list_item" v-for="item in list" :key="item">
+    <div class="article_list_item" v-for="item in list" :key="item" @click="clickHandle()">
       <div class="article_common article_title" v-if="item.title ? true : false">
         {{item.title}}
       </div>
@@ -36,6 +36,12 @@ export default {
   data () {
     return {
       arr: [1, 2, 3, 4, 5, 6, 7]
+    }
+  },
+  methods: {
+    clickHandle () {
+      const url = '../detail/main'
+      wx.navigateTo({ url })
     }
   }
 }
